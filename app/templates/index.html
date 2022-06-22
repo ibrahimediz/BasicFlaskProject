@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block icerik %}
+<h1>Merhaba {{user.kullanici}}
+</h1>
+{% for gonderi in gonderiler %}
+<div><p>{{gonderi.yazar}} demişki:<b>
+    {{gonderi.içerik}}</b></p>
+</div>
+{% endfor %}
+{% endblock %}
